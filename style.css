@@ -4,46 +4,61 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: Helvetica;
 }
 
 .container {
-    background-color: aqua;
+    background-color: lightgrey;
     height: 920px;
-    width: 920px;
+    width: 1020px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.header {
-    background-color: green;
+.header, .footer {
     height: 50px;
+    font-size: 24px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .content {
-    background-color: red;
     display: flex;
     height: 100%;
 }
 
 .sidebar {
-    background-color: purple;
-    min-width: 100px;
+    padding-top: 10px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .canvas {
-    background-color: orange;
     width: 100%;
     padding: 10px;
 }
 
-.footer {
-    background-color: lightskyblue;
-    height: 50px;
+.row {
+    width: 800px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.cell {
+    background-color: white;
+}
+
+.cell:hover{
+    background-color: grey;
+}
+
+.button {
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
 }
